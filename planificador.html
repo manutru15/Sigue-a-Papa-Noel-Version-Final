@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador de Viajes</title>
+    <link rel="stylesheet" href="style/ej_style.css">
+</head>
+<body class="planificador-body">
+    <div class="planificador-contenedor">
+        <h1>Planifica tu viaje</h1>
+        <!-- Migas de Pan -->
+        <nav class="breadcrumbs">
+            <ul>
+                <li class="breadcrumb active" data-step="1">Información General</li>
+                <li class="breadcrumb" data-step="2">Horarios</li>
+                <li class="breadcrumb" data-step="3">Confirmación</li>
+            </ul>
+        </nav>
+
+        <!-- Formulario por pasos -->
+        <form id="travel-form">
+            <!-- Paso 1: Información General -->
+            <div class="form-step active" data-step="1">
+                <div class="form-group">
+                    <label for="adults">Nº de adultos (mayores de 18 años)*</label>
+                    <input type="number" id="adults" min="0" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="children">Nº de niños (menos de 18 años)*</label>
+                    <input type="number" id="children" min="0" value="0">
+                </div>
+                <button type="button" class="next-btn">Siguiente</button>
+            </div>
+
+            <!-- Paso 2: Horarios -->
+            <div class="form-step" data-step="2">
+                <div class="form-group">
+                    <label for="arrival-time">Hora de llegada*</label>
+                    <input type="time" id="arrival-time">
+                </div>
+                <div class="form-group">
+                    <label for="departure-time">Hora de salida*</label>
+                    <input type="time" id="departure-time">
+                </div>
+                <div class="form-group">
+                    <label for="arrival-date">Fecha de llegada*</label>
+                    <input type="date" id="arrival-date">
+                </div>
+                <div class="form-group">
+                    <label for="departure-date">Fecha de salida*</label>
+                    <input type="date" id="departure-date">
+                </div>
+                <div class="button-container">
+                    <button type="button" class="prev-btn">Anterior</button>
+                    <button type="button" class="next-btn">Siguiente</button>
+                </div>
+            </div>
+
+            <!-- Paso 3: Confirmación -->
+            <div class="form-step" data-step="3">
+                <h2>Confirmación</h2>
+                <p><strong>Fecha de llegada:</strong> <span id="selected-arrival-date"></span></p>
+                <p><strong>Fecha de salida:</strong> <span id="selected-departure-date"></span></p>
+                <p><strong>Nº de adultos:</strong> <span id="selected-adults"></span></p>
+                <p><strong>Nº de niños:</strong> <span id="selected-children"></span></p>
+                <p><strong>Hora de llegada:</strong> <span id="selected-arrival-time"></span></p>
+                <p><strong>Hora de salida:</strong> <span id="selected-departure-time"></span></p>
+                <div class="button-container">
+                    <button type="button" class="prev-btn">Anterior</button>
+                    <button type="button" id="submit-btn">Confirmar</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer"><a href="perfilUsuario.html">Volver</a></div>
+
+    <script src="./script/planificador.js"></script>
+</body>
+</html>

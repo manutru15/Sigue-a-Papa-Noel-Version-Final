@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigue a Papá Noel</title>
+    <link rel="icon" href="images/sc_icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/ej_style.css">
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <!-- Logo -->
+        <div class="logo_menu">
+            <img src="images/sc_icono.png" alt="Logo Santa Claus" class="logo_header" id="logo_header">
+            <h3>Menú</h3>
+        </div>
+
+
+
+        <div class="menu_desplegable_header" id="menu_desplegable_header">
+            <div class="menu_item"><a href="#home">Home</a></div>
+            <div class="menu_item"><a href="#conoce_a_papa_noel">Conoce a Papá Noel</a></div>
+            <div class="menu_item"><a href="#cartas">Las cartas</a></div>
+            <div class="menu_item"><a href="#envia_tu_carta">Envía tu carta</a></div>
+            <div class="menu_item"><a href="#juegos">Juega</a></div>
+            <div class="menu_item"><a href="mapa.html">Sigue a Papá Noel</a></div>
+            <div class="menu_item"><a href="calendario.html">Calendario de Adviento</a></div>
+            <div class="menu_item"><a href="planificador.html">Organizador de viajes</div>
+            <div class="menu_item"><a href="#recetas_de_navidad">Recetas de Navidad</a></div>
+            <div class="menu_item"><a href="#videollamada_con_papa_noel">Videollamada con Papá Noel</a></div>    
+        </div>
+
+        <!-- Botón de perfil y menú desplegable -->
+        <div class="perfil-container">
+            <button id="botonPerfil" onclick="toggleMenu()">Perfil</button>
+            <div id="perfilMenu" class="perfil-menu">
+                <!--<a href="miPerfil.html">Mi perfil</a>
+                <a href="misCartas.html">Mis cartas</a> --> 
+                <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>
+            </div>
+        </div>
+
+
+        
+    </header>
+
+    <!-- SECCIONES -->
+    <main>
+
+        <!-- Home -->
+        <section class="home" id="home">
+            <h1>El Mundo de Santa</h1>
+            <div class="contador" id="contador"></div>
+            <img src="images/sc_home.png" alt="Santa Claus" class="sc_home">
+        </section>
+
+        
+
+        <!-- Asistente Virtual -->
+        <img src="./images/asistente_virtual.png" alt="Asistente Virtual" class="asistente" id="asistente">
+        <div class="ventana_asistente" id="ventana_asistente">
+            <img id="f_atras_asistente" src="./images/f_atras.png" alt="Atrás">
+            <h2>Asistente Virtual</h2>
+            <div class="contenedor_chat">
+                <div class="contenedor_conv">
+                    <div class="mensaje chat">
+                        <p>¡Hola! Soy el asistente virtual de Papá Noel.<br>¿En qué te puedo ayudar?</p>
+                    </div>
+                </div>
+                <span class="txt_opcion">Selecciona una opción</span>
+                <div class="opciones">
+                    <button class="opcion" data-respuesta="Los renos de Santa se llaman: Rudolph, Dasher, Dancer, Prancer, Vixen, Comet, Cupid, Donner y Blitzen.">¿Cómo se llaman los renos de Santa?</button>
+                    <button class="opcion" data-respuesta="Los duendes de Santa suelen tardar unas dos semanas en preparar todos los regalos. ¡Son muy rápidos!">¿Cuánto tiempo tardan los duendes en hacer los regalos?</button>
+                    <button class="opcion" data-respuesta="¡Depende! Si no te portaste bien, podrías recibir carbón, pero Papá Noel siempre busca darte algo especial.">¿Santa me va a traer carbón?</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conoce a Papá Noel -->
+        <section class="conoce_a_papa_noel" id="conoce_a_papa_noel">
+            <h2>Papá Noel</h2>
+            <div class="contenedor_papa_noel">
+                <div class="informacion_papa_noel">
+                    <h3>¿Quién es Papá Noel?</h3>
+                    <p>Papá Noel es un personaje mítico vinculado a las celebraciones navideñas, conocido por traer regalos a los niños la noche del 24 de diciembre, 
+                        viajando en un trineo tirado por renos. Su imagen moderna, con su traje rojo, barba blanca y sonrisa afable, proviene de diversas tradiciones, 
+                        incluyendo la figura de San Nicolás, un santo famoso por su generosidad. A lo largo de los siglos, su leyenda ha crecido y hoy simboliza el espíritu 
+                        de la Navidad, representando la bondad, la esperanza y la alegría en las fiestas.
+                    </p>
+                </div>
+                <img src="./images/sc_papa_noel.png" alt="Papá Noel">
+            </div>
+        </section>
+
+        <!-- Las Cartas -->
+        <section class="cartas" id="cartas">
+            <h2>Las Cartas</h2>
+            <div class="contenedor_cartas">
+                <div class="carta">
+                    <img src="images/las_cartas_max.gif" alt="Max">
+                    <div class="informacion_carta">
+                        <h2>Max</h2>
+                        <p>Barcelona, España</p>
+                        <span style="height: 0.4vh;"></span>
+                        <p>Querido Papá Noel, este año he sido muy bueno y me encantaría recibir un coche de juguete. ¡Me gustan muchísimo los coches 
+                            y me haría muy feliz!</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <img src="images/las_cartas_andrea.gif" alt="Andrea">
+                    <div class="informacion_carta">
+                        <h2>Andrea</h2>
+                        <p>Galicia, España</p>
+                        <span style="height: 0.4vh;"></span>
+                        <p>Querido Papá Noel, este año me he portado muy bien y me encantaría tener un balón de fútbol. ¡Me encanta jugar y hacer 
+                            deporte con mis amigos!</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <img src="images/las_cartas_jesus.gif" alt="Jesús">
+                    <div class="informacion_carta">
+                        <h2>Jesús</h2>
+                        <p>Madrid, España</p>
+                        <span style="height: 0.4vh;"></span>
+                        <p>Querido Papá Noel, este año me gustaría recibir un kit de ciencia. ¡Me encanta hacer experimentos y aprender cosas 
+                            nuevas sobre el mundo!</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <img src="images/las_cartas_maria.gif" alt="María">
+                    <div class="informacion_carta">
+                        <h2>María</h2>
+                        <p>Madrid, España</p>
+                        <span style="height: 0.4vh;"></span>
+                        <p>Querido Papá Noel, me encanta leer y descubrir nuevas historias. Este año, me gustaría tener más libros para seguir 
+                            viajando con mi imaginación.</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <img src="images/las_cartas_marco.gif" alt="Marco">
+                    <div class="informacion_carta">
+                        <h2>Marco</h2>
+                        <p>Murcia, España</p>
+                        <span style="height: 0.4vh;"></span>
+                        <p>Querido Papá Noel, me fascinan los dinosaurios y quiero aprender más sobre ellos. ¿Podrías traerme algún libro o 
+                            juguete de dinosaurios este año?</p>
+                    </div>
+                </div>
+                <div class="carta">
+                    <img src="images/las_cartas_lucia.gif" alt="Lucía">
+                    <div class="informacion_carta">
+                        <h2>Lucía</h2>
+                        <p>Segovia, España</p>
+                        <span style="height: 0.4vh;"></span>
+                        <p>Querido Papá Noel, este año me he portado muy bien y me encantan las muñecas. Me haría mucha ilusión recibir una nueva
+                            para mi colección.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Recetas de Navidad -->
+        <section class="recetas_de_navidad" id="recetas_de_navidad">
+            <h2>Recetas de Navidad</h2>
+            <div class="contenedor_recetas">
+                <div class="receta" data-receta="galletas">
+                    <img src="./images/g_recetas.png" alt="Recetas de Navidad" class="img_recetas">
+                    <h3>Galletas de Navidad</h3>
+                </div>
+                <div class="receta" data-receta="pescado">
+                    <img src="./images/p_recetas.png" alt="Recetas de Navidad" class="img_recetas">
+                    <h3>Pescado de Navidad</h3>
+                </div>
+                <div class="receta" data-receta="carne">
+                    <img src="./images/c_recetas.png" alt="Recetas de Navidad" class="img_recetas">
+                    <h3>Carne de Navidad</h3>
+                </div>
+            </div>
+
+            <div class="ventana_receta" id="ventana_galletas">
+                <img id="f_atras_recetas" src="./images/f_atras.png" alt="Atrás">
+                <h2>Galletas de Navidad</h2>
+                <div class="imagenes_receta">
+                    <img src="./images/deco_r.png" alt="Decoración">
+                    <img src="./images/g_recetas_simp.jpg" alt="Galletas de Navidad">
+                </div>
+                <div>
+                    <div>
+                        <h3>Ingredientes</h3>
+                        <p>⁓ Harina<br>⁓ Azúcar<br>⁓ Mantequilla<br>⁓ Huevo<br>⁓ Esencia de vainilla<br>⁓ Sal<br>⁓ Levadura<br>⁓ Canela<br>⁓ Jengibre
+                            <br>⁓ Clavo<br>⁓ Nuez moscada<br>⁓ Ralladura de limón<br>⁓ Ralladura de naranja</p>
+                    </div>
+                    <div>
+                        <h3>Elaboración</h3>
+                        <p>1. Mezclar la mantequilla con el azúcar<br>2. Añadir el huevo, la esencia de vainilla, la sal, la levadura, la canela, el jengibre, 
+                            el clavo, la nuez moscada, la ralladura de limón y la ralladura de naranja<br>3. Añadir la harina y amasar<br>4. Estirar la masa y 
+                            cortar las galletas con moldes navideños<br>5. Hornear a 180ºC durante 10-15 minutos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ventana_receta" id="ventana_pescado">
+                <img id="f_atras_recetas" src="./images/f_atras.png" alt="Atrás">
+                <h2>Pescado de Navidad</h2>
+                <div class="imagenes_receta">
+                    <img src="./images/deco_r.png" alt="Decoración">
+                    <img src="./images/p_recetas_simp.jpg" alt="Pescado de Navidad">
+                </div>
+                <div>
+                    <div>
+                        <h3>Ingredientes</h3>
+                        <p>⁓ Bacalao<br>⁓ Patatas<br>⁓ Cebolla<br>⁓ Pimiento rojo<br>⁓ Pimiento verde<br>⁓ Tomate<br>⁓ Ajo<br>⁓ Aceite de oliva
+                            <br>⁓ Sal<br>⁓ Pimienta<br>⁓ Perejil</p>
+                    </div>
+                    <div>
+                        <h3>Elaboración</h3>
+                        <p>1. Desalar el bacalao y cocerlo<br>2. Cocer las patatas y cortarlas en rodajas<br>3. Sofreír la cebolla, los pimientos, el tomate y 
+                            el ajo<br>4. Montar el plato con el bacalao, las patatas y el sofrito<br>5. Aliñar con aceite de oliva, sal, pimienta y perejil</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ventana_receta" id="ventana_carne">
+                <img id="f_atras_recetas" src="./images/f_atras.png" alt="Atrás">
+                <h2>Carne de Navidad</h2>
+                <div class="imagenes_receta">
+                    <img src="./images/deco_r.png" alt="Decoración">
+                    <img src="./images/c_recetas_simp.webp" alt="Carne de Navidad">
+                </div>
+                <div>
+                    <div>
+                        <h3>Ingredientes</h3>
+                        <p>⁓ Carne de cerdo<br>⁓ Ciruelas pasas<br>⁓ Orejones<br>⁓ Piñones<br>⁓ Ajo<br>⁓ Aceite de oliva<br>⁓ Sal
+                            <br>⁓ Pimienta<br>⁓ Romero<br>⁓ Tomillo<br>⁓ Laurel<br>⁓ Vino blanco</p>
+                    </div>
+                    <div>
+                        <h3>Elaboración</h3>
+                        <p>1. Adobar la carne con ajo, aceite de oliva, sal, pimienta, romero, tomillo, laurel y vino blanco<br>2. Rellenar la carne 
+                            con ciruelas pasas, orejones y piñones<br>3. Hornear a 180ºC durante 1 hora</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Sección de Juegos -->
+        <section class="juegos" id="juegos">
+            <h2>Juegos de Navidad</h2>
+            <div class="contenedor_juegos">
+                <!-- Menú de selección -->
+                <div class="menu_juegos">
+                    <button id="juego1">Juego 1</button>
+                    <button id="juego2">Juego 2 (Piano)</button>
+                </div>
+                <!-- Contenedor para el área jugable -->
+                <div class="contenedor_juego">
+                    <!-- Título del juego -->
+                    <h3 id="titulo_juego">Juego 1: ¡Empieza ahora!</h3>
+                    <!-- Contenedor para el Juego 1 (se esconde por defecto) -->
+                    <div id="juego1_contenedor" class="juego" style="display: block;">
+                        <button id="boton-empezar" onclick="iniciarJuego()">EMPEZAR</button>
+                        <div id="temporizador">Tiempo restante: 0</div>
+                        <div id="puntuacion">Puntuación: 0</div>
+                        <button id="boton-juego" onclick="clicEnCirculo()"></button>
+                    </div>
+                    <!-- Contenedor para el Juego 2 (Piano) -->
+                    <div id="juego2_contenedor" class="juego" style="display: none;">
+                        <div class="controles_piano">
+                            <button id="boton_play" class="boton_play">▶ Iniciar Canción</button>
+                        </div>
+                        <div class="piano">
+                            <!-- Teclas del piano -->
+                            <div class="tecla blanca" data-nota="do">Do</div>
+                            <div class="tecla negra" data-nota="do#">Do#</div>
+                            <div class="tecla blanca" data-nota="re">Re</div>
+                            <div class="tecla negra" data-nota="re#">Re#</div>
+                            <div class="tecla blanca" data-nota="mi">Mi</div>
+                            <div class="tecla blanca" data-nota="fa">Fa</div>
+                            <div class="tecla negra" data-nota="fa#">Fa#</div>
+                            <div class="tecla blanca" data-nota="sol">Sol</div>
+                            <div class="tecla negra" data-nota="sol#">Sol#</div>
+                            <div class="tecla blanca" data-nota="la">La</div>
+                            <div class="tecla negra" data-nota="la#">La#</div>
+                            <div class="tecla blanca" data-nota="si">Si</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Videollamada con Papá Noel -->
+        <section class="videollamada" id="videollamada_con_papa_noel">
+            <h2>Videollamada con Papá Noel</h2>
+            <div class="contenedor_videollamada">
+                <video id="video_papa_noel" width="600"></video>
+            </div>
+            <div class="controles_videollamada">
+                <button id="boton_iniciar_videollamada">Iniciar Videollamada</button>
+                <button id="boton_colgar_videollamada">Colgar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script/ej_script.js"></script>
+    <script src="./script/videollamada.js"></script>
+    <script src="./script/juegos.js"></script>
+    <script src="./script/registrarse.js"></script>
+    <script src="./script/iniciosesion.js"></script>
+    <script src="./script/perfilUsuario.js"></script>
+</body>
+
+</html>
