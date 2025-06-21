@@ -1,0 +1,1573 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+html, body, main {
+    height: fit-content;
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    align-items: center;
+    background-color: #eceef2;
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    justify-content: flex-start;
+}
+
+h2 {
+    color: #800020;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 3vh;
+}
+
+.no_scroll {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+header {
+    align-items: center;
+    background-color: #800020;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    padding: 0.8vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    color: whitesmoke;
+}
+
+
+.logo_header {
+    cursor: pointer;
+    height: 6vh;
+    transition: transform 0.3s;
+}
+
+.logo_header:hover {
+    transform: rotate(15deg);
+}
+
+.botones_header {
+    display: flex;
+    gap: 0.6vw;
+}
+
+.botones_header button {
+    border-radius: 12px;
+    font-size: 0.94rem;
+    font-weight: bold;
+    padding: 0.6vw;
+    transition: all 0.4s ease;
+}
+
+.botones_header button:hover {
+    background-color: #47D16C;
+    color: white;
+    transform: scale(1.05);
+}
+
+.menu_desplegable_header {
+    background-color: #800020;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    height: fit-content;
+    left: 0;
+    position: absolute;
+    top: 8vh;
+    width: 20vw;
+    z-index: 1000;
+}
+
+.menu_item {
+    border-bottom: 1px solid #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8vw;
+}
+
+.menu_item a {
+    color: whitesmoke;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.menu_item:hover {
+    background-color: #47D16C;
+}
+
+.menu_item:last-child:hover {
+    border-radius: 0 0 2vh 2vh;
+}
+
+header h3 {
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.4vw;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.home {
+    background-image: url('../images/cc_home.avif');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 20%;
+    justify-content: center !important;
+}
+
+.home h1 {
+    color: #33944d;
+    font-family: "Spicy Rice";
+    font-size: 8rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.sc_home {
+    margin-top: 3vh;
+    transition: transform 0.3s ease-in-out;
+    width: 18vw;
+}
+
+.sc_home:hover {
+    transform: scale(1.1);
+}
+
+.contador {
+    color: #256a38;
+    font-family: "Acme";
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.contenedor_papa_noel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3vh;
+    width: 76vw;
+    gap: 4vw;
+}
+
+.informacion_papa_noel {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 46vw;
+    font-size: 1.4rem;
+    text-align: justify;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+.informacion_papa_noel h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.4vw;
+}
+
+.contenedor_papa_noel img {
+    width: 30vw;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.contenedor_cartas {
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100vw;
+    height: 70vh;
+}
+
+.carta {
+    background-color: tan;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 0.6vw;
+}
+
+.carta h2 {
+    font-size: 2rem;
+}
+
+.carta p {
+    font-size: 1rem;
+    margin-top: 0.6vh;
+    padding-bottom: 1vh;
+    padding-right: 0.4vw;
+}
+
+.carta img {
+    margin-right: 1vw;
+    width: 14vw;
+    border-radius: 100px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+#formulario_enviar {
+    column-gap: 5vw; /* Espacio entre elementos */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    margin-top: 4vh !important;
+    padding-left: 2vw;
+    row-gap: 4vh;
+    width: 62vw;
+    align-self: flex-start;
+}
+
+#formulario_enviar input {
+    width: 40vw !important;
+}
+
+#formulario_enviar img {
+    width: 8vw;
+}
+
+#carta_enviar {
+    max-height: 20vh;
+    max-width: 38vw;
+    min-height: 10vh;
+    min-width: 30vw;
+}
+
+.botones_envio button {
+    background-color: whitesmoke;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+/**************************************************REGISTRO E INICIAR SESION****************************************************/
+
+.ventana_registrar, .ventana_iniciar {
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    height: 80vh;
+    left: 50%;
+    overflow: hidden;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease;
+    width: 0;
+    z-index: 100;
+}
+
+.ventana_registrar.activa {
+    width: 70vw;
+}
+
+.ventana_iniciar.activa {
+    width: 40vw;
+}
+
+.ventana_registrar h1, .ventana_iniciar h1 {
+    font-size: 2.6rem;
+    margin: 0;
+    color: #800020;
+}
+
+#formulario_registrar, #contenedor_hijos, #formulario_iniciar {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 62vw;
+}
+
+#formulario_iniciar {
+    width: 32vw;
+}
+
+#formulario_registrar, #formulario_iniciar, #formulario_enviar {
+    margin-top: 1vh;
+}
+
+#contenedor_hijos {
+    overflow: visible;
+    width: 59vw;
+}
+
+.ventana_registrar label, .ventana_iniciar label, #formulario_enviar label {
+    font-size: 1.08rem;
+    font-weight: 500;
+    margin-top: 1.4vh;
+    width: 59vw;
+}
+
+.ventana_registrar input, .ventana_registrar select, .ventana_iniciar input, #formulario_enviar input, #formulario_enviar textarea {
+    background-color: #800020;
+    border: none;
+    border-radius: 18px;
+    color: whitesmoke;
+    font-weight: 400;
+    margin: 8px 0;
+    padding: 10px;
+    width: 59vw;
+}
+
+.ventana_iniciar input {
+    width: 29vw;
+}
+
+.ventana_registrar input::placeholder, .ventana_iniciar input::placeholder, #formulario_enviar input::placeholder, #formulario_enviar textarea::placeholder {
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+#contenedor_hijos {
+    overflow-y: visible;
+}
+
+#contenedor_hijos input {
+    background-color: #525252;
+}
+
+.botones_registro, .botones_inicio {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+}
+
+.botones_registro button, .botones_inicio button, .botones_envio button {
+    background-color: lightgray;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px 8px;
+    transition: background-color 0.28s ease, color 0.28s ease;
+    white-space: nowrap;
+}
+
+.botones_registro button:hover, .botones_inicio button:hover, .botones_envio button:hover {
+    background-color: #3fab68;
+    color: whitesmoke;
+}
+
+.ventana_iniciar img {
+    height: 22vh;
+    margin-top: 6.8vh;
+}
+
+
+
+/************************************************PERFIL USUARIO************************************************/
+
+.perfil-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 3%;
+    width: 15%; 
+    
+  }
+  
+  
+  #botonPerfil {
+    background-color: #ffffff;
+    font-family: 'Times New Roman';
+    color: #0c3b0e;
+    border: none;
+    outline: none;
+    width: 100%; 
+    font-size: 120%;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 4%;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    white-space: nowrap; 
+    margin-left: 15%;
+  }
+  
+  #botonPerfil:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #botonPerfil:active {
+    background-color: #cfcfcf;
+  }
+  
+  
+  .perfil-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%; 
+    top: 95%; 
+    margin-right: -15.5%;
+    margin-top: 6%;
+  }
+  
+  
+  .perfil-menu a {
+    color: #0c3b0e;
+    font-family: 'Times New Roman';
+    font-size: 105%;
+    padding: 7%;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .perfil-menu a:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
+  .perfil-menu.mostrar {
+    display: block;
+  }
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.contenedor_recetas {
+    display: grid;
+    gap: 6vw;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70vh;
+    margin-top: 4vh;
+}
+
+.contenedor_recetas div {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contenedor_recetas div:nth-child(2) {
+    justify-content: flex-end;
+}
+
+.contenedor_recetas div:hover {
+    transform: scale(1.06);
+}
+
+.img_recetas {
+    width: 20vw;
+}
+
+.contenedor_recetas div h3 {
+    font-size: 1.28rem;
+    font-weight: normal;
+    margin-top: 1vh;
+}
+
+.ventana_receta, .ventana_asistente {
+    align-items: center;
+    background-color: tan;
+    border: 1px solid #525252;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    height: 84vh;
+    justify-content: flex-start;
+    padding: 2vw;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 80vw;
+    z-index: 1000;
+}
+
+.ventana_receta.active, .ventana_asistente.active {
+    display: flex;
+}
+
+#f_atras_recetas, #f_atras_asistente {
+    align-self: flex-start;
+    cursor: pointer;
+    width: 2vw;
+}
+
+.imagenes_receta {
+    align-items: center;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    margin-top: 0 !important;
+}
+
+.imagenes_receta img:first-child {
+    width: 16vw;
+}
+
+.imagenes_receta img:last-child {
+    border-radius: 20px;
+    width: 10vw;
+}
+
+.ventana_receta div {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 6vh;
+}
+
+.ventana_receta div h3 {
+    margin: 0;
+}
+
+.ventana_receta div > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+    margin-top: 0 !important;
+}
+
+.ventana_receta div > div:first-child p {
+    column-count: 2;
+    column-gap: 3vw;
+    font-style: italic;
+}
+
+.ventana_receta div > div:last-child p {
+    font-style: italic;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    text-align: justify;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.asistente {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh; 
+    width: 4.6vw; 
+    height: auto; 
+    cursor: pointer; 
+    z-index: 1000; 
+}
+
+.contenedor_chat {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 60vw;
+}
+
+.contenedor_conv {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1vw;
+    height: 40vh;
+    overflow-y: auto;
+}
+
+.mensaje {
+    padding: 0.8vw;
+    border-radius: 15px;
+    margin: 0.6vw 0;
+    max-width: 40vw;
+}
+
+.mensaje.chat {
+    background-color: #800020;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.mensaje.usuario {
+    background-color: #47D16C;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.txt_opcion {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #800020;
+    margin-top: 2vh;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.4vh;
+    gap: 1vw;
+}
+
+.opcion {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0.8vw;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.opcion:hover {
+    background-color: #47D16C;
+    color: #fff;
+}
+
+
+
+
+/* --Juegos------------------------------------------------------------------------------------------------------------------------------ */
+/* Estilos de la Sección de Juegos */
+.juegos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3vh 2vw;
+}
+
+.juegos h2 {
+    color: #800020;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.juegos h3 {
+    color: #800020;
+    font-size: 2.5rem; /* Tamaño más pequeño */
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1vh; /* Menos margen */
+}
+/* Contenedor de juegos (grid) */
+.contenedor_juegos {
+    display: grid;
+    grid-template-columns: 0.8fr 3.2fr;
+    gap: 2vw;
+    width: 90%;
+    height: 70vh;
+    align-items: center;
+}
+
+/* Estilos del menú de juegos */
+.menu_juegos {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu_juegos button {
+    background-color: #47D16C;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1.2vh 1.2vw;
+    transition: all 0.3s ease;
+}
+
+.menu_juegos button:hover {
+    background-color: #33944d;
+    transform: scale(1.05);
+}
+
+/* Estilos del contenedor para los juegos */
+.contenedor_juego {
+    background-color: #eceef2;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen de arriba hacia abajo */
+    justify-content: flex-start; /* Alinea los elementos desde la parte superior */
+    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    font-size: 1.2rem;
+    padding: 2vw;
+    text-align: left; /* Alineación de texto a la izquierda */
+    position: relative;
+}
+
+/* Estilos para el contenedor del Juego 1 */
+#boton-empezar {
+    position: absolute;
+    /* centrar en medio del div */
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: whitesmoke;
+    font-weight: bold;
+    width: auto;
+    background-color: #800020;
+    border-radius: 12px;
+    font-size: 2rem;
+    white-space: nowrap;
+    border: 0.4px;
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+
+#boton-empezar:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+#juego1{
+    background-image: url("../images/arbol_de_navidad_2.jpg");
+    background-size: cover;
+    background-position:top;
+}
+
+#temporizador{
+    display: none;
+    position: absolute;
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: whitesmoke;
+    font-weight: bold;
+    width: auto;
+    background-color: #964844;
+    border-bottom-right-radius: 12px;
+    font-size: 1.3rem;
+}
+
+#puntuacion {
+    display: none;
+    position: absolute;
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: whitesmoke;
+    font-weight: bold;
+    width: auto;
+    background-color: #964844;
+    border-bottom-left-radius: 12px;
+    font-size: 1.3rem;
+    right: 0;
+}
+
+#boton-juego{
+    display: none;
+/* boton circular con borde rojo */
+    position: absolute;
+    /* centrar en medio del div */
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 5vw;
+    height: 5vw;
+    /* borde ligeramente grueso color rojo  */
+    border-color: red;
+    border-width: 0.5vw;
+    border-style: solid;
+    /* borde redondeado */
+    border-radius: 50%;
+    background-color: transparent;
+    user-select: none;
+    background-image: url('../images/presente.png'); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el botón */
+    background-position: center; /* Centra la imagen en el botón */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos para el contenedor del Juego 2 */
+#juego2_contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para el piano */
+.piano {
+    display: flex;
+    gap: 0; /* Elimina el espacio entre las teclas */
+    justify-content: center; /* Centra las teclas horizontalmente */
+    align-items: flex-end; /* Alinea las teclas en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 80%; /* Ocupa todo el alto del contenedor */
+}
+
+/* Estilos para las teclas */
+.tecla {
+    width: 60px; /* Ancho de las teclas blancas */
+    height: 180px; /* Altura de las teclas blancas */
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    position: relative; /* Añadido para posicionar el texto */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el texto en la parte superior */
+    color: #888; /* Tono grisáceo */
+    font-size: 0.8rem;
+    padding-top: 5px; /* Espacio superior para el texto */
+}
+
+.tecla:hover {
+    transform: scale(1.1);
+}
+
+.tecla.blanca {
+    background-color: white;
+}
+
+.tecla.negra {
+    background-color: black;
+    width: 45px; /* Ancho de las teclas negras */
+    height: 120px; /* Altura de las teclas negras */
+    position: relative;
+    margin-left: -22.5px; /* Ajusta el margen para centrar las teclas negras */
+    margin-right: -22.5px; /* Ajusta el margen para centrar las teclas negras */
+    z-index: 1;
+}
+
+.tecla.negra:hover {
+    background-color: #333;
+}
+
+
+.controles_piano {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.boton_play {
+    background-color: #47D16C;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.boton_play:hover {
+    background-color: #33944d;
+    transform: scale(1.05);
+}
+
+/* Estilos para la videollamada */
+.videollamada {
+    align-items: center;
+    background-color: #eceef2;
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.videollamada h2 {
+    color: #800020;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.contenedor_videollamada {
+    background-color: #000;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60vh;
+    margin-bottom: 2vh;
+}
+
+.contenedor_videollamada video {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.controles_videollamada {
+    display: flex;
+    gap: 1vw;
+}
+
+.controles_videollamada button {
+    background-color: #47D16C;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#boton_colgar_videollamada {
+    background-color: #cb0536;
+}
+
+#boton_colgar_videollamada:hover {
+    background-color: #a8002b;
+}
+
+.controles_videollamada button:hover {
+    background-color: #33944d;
+    transform: scale(1.05);
+}
+
+/* ----------------------------------------------------CALENDARIO DE ADVIENTO---------------------------------------------------- */
+
+
+.body_calendario {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.calendario_adviento {
+    justify-content: flex-start;
+    padding-top: 3vh;
+    background-color: #f4f4f9;
+}
+
+.calendar-container {
+    margin: 1%;
+    background-image: url('../images/A1pe+rMVdcL.jpg');
+    background-size: cover; 
+    background-position: center; 
+    width: 100%; 
+    height: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.day {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    color: #a90028;
+    font-size: 1.2em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.day:hover {
+    transform: scale(1.2);
+    background-color: #a90028;
+    color: white;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #a90028;
+    font-size: 1.2em;
+    color: white;
+    padding: 0.5%;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.message-container {
+    position: fixed; /* Fija el cuadro en el centro de la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el cuadro */
+    padding: 20px 30px;
+    width: 20%;
+    height: 40%;
+    background-color: #800020; /* Color de fondo */
+    color: #eceef2; /* Color del texto */
+    font-size: 18px;
+    text-align: center;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    display: none; /* Oculto por defecto */
+    z-index: 100; /* Asegura que esté encima del contenido */
+}
+
+/* Estilo para el título del mensaje */
+.message-container h2 {
+    margin: 0;
+    font-size: 200%;
+    font-weight: bold;
+    color: #eceef2;
+    margin-bottom: 10px;
+}
+
+.message-container p {
+    font-size: 150%;
+    color: #eceef2;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+/* Estilo para el botón de cerrar */
+.message-container button {
+    background-color: #eceef2;
+    color: #800020;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.message-container button:hover {
+    background-color: #ffffff; /* Cambia el color al pasar el mouse */
+}
+
+
+/* ----------------------------------------------------PLANIFICADOR DE VIAJES---------------------------------------------------- */
+
+/* Específico para el planificador */
+.planificador-body {
+    overflow: hidden; /* Evita el scroll */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0;
+    padding: 0;
+    background-color: #eceef2; /* Fondo consistente */
+}
+
+.planificador-contenedor {
+    width: 100%;
+    height: 100%;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Mantiene el contenido alineado arriba */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.planificador-contenedor h1 {
+    font-size: 3em;
+    margin-top: 20px; /* Un margen estándar para arriba */
+    margin-bottom: 30px; 
+    color: #800020;
+}
+
+/* Migas de Pan */
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.breadcrumbs li {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #eceef2;
+    color: #800020;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.breadcrumbs li.active {
+    background-color: #800020;
+    color: #fff;
+}
+
+.breadcrumbs li:hover:not(.active) {
+    background-color: #a90028;
+    color: #fff;
+}
+
+/* Formularios por pasos */
+.form-step {
+    display: none;
+}
+
+.form-step .prev-btn, .form-step .next-btn {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Contenedor para alinear botones */
+.form-step .button-container {
+    display: flex;
+    justify-content: center; /* Centrar botones */
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.form-step.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente los formularios */
+    gap: 20px; /* Espaciado entre los campos */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.form-group {
+    width: 100%;
+    text-align: left;
+}
+
+.planificador-contenedor label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espaciado entre los botones */
+    margin-top: 20px;
+}
+
+.next-btn, .prev-btn, #submit-btn {
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1em;
+    color: #fff;
+    background-color: #800020;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Ancho uniforme para todos los botones */
+    text-align: center;
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho */
+}
+
+
+
+.next-btn:hover, .prev-btn:hover,   #submit-btn:hover {
+    background-color: #600015;
+}
+
+
+
+
+.planificador-contenedor input {
+    appearance: none; /* Eliminar estilos nativos */
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+    width: 100%;
+    max-width: 300px; /* Ancho uniforme */
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Ajuste específico para inputs de tipo time, date y number */
+.planificador-contenedor input[type="number"],
+.planificador-contenedor input[type="time"],
+.planificador-contenedor input[type="date"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 100%; /* Igualar el ancho */
+    max-width: 300px; /* Un tamaño máximo consistente */
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Opcional: Estilo de placeholder para coherencia */
+.planificador-contenedor input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+/* ----------------------------------------------------MAPA---------------------------------------------------- */
+
+.mapa h2 {
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #800020;
+    text-align: center;
+}
+
+.mapa button {
+    background-color: #800020;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: background-color 0.3s;
+}
+
+#map-container {
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+  }
+  
+  #world-map {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #d32f2f;
+  }
+  
+  #santa-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/sc_icono.png');
+  }
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Estilos para la sección de Juegos */
+@media (max-width: 1024px) {
+    .contenedor_juegos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+    }
+
+    .menu_juegos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1vw;
+        margin-bottom: 2vh;
+    }
+
+    .contenedor_juego {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor_juegos {
+        grid-template-columns: 1fr;
+    }
+
+    .menu_juegos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1vw;
+        margin-bottom: 2vh;
+    }
+
+    .contenedor_juego {
+        width: 100%;
+    }
+
+    .tecla {
+        width: 40px;
+        height: 120px;
+    }
+
+    .tecla.negra {
+        width: 30px;
+        height: 90px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .cartas {
+        height: max-content;
+        padding-bottom: 4vh;
+    }
+    
+    .contenedor_cartas {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 2vh;
+    }
+
+    .carta {
+        background-color: tan;
+        height: max-content;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        overflow: visible;
+        padding: 0.6vw;
+    }
+    
+    .carta h2 {
+        font-size: 1rem;
+    }
+    
+    .carta p {
+        font-size: 0.8rem;
+    }
+    
+    .carta img {
+        margin-right: 1vw;
+        width: 20vw;
+        border-radius: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor_juegos {
+        grid-template-columns: 1fr;
+    }
+
+    .menu_juegos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1vw;
+        margin-bottom: 2vh;
+    }
+
+    .contenedor_juego {
+        width: 100%;
+    }
+
+    .tecla {
+        width: 30px;
+        height: 90px;
+    }
+
+    .tecla.negra {
+        width: 20px;
+        height: 60px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .menu_desplegable_header {
+        width: 80vw;
+    }
+
+    .home h1 {
+        font-size: 3.4rem;
+    }
+    
+    .sc_home {
+        width: 22vw;
+    }
+    
+    .contador {
+        font-size: 2rem;
+    }
+
+    .contenedor_papa_noel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacion_papa_noel {
+        width: 76vw;
+        font-size: 0.8rem;
+        margin-top: 3vh;
+    }
+
+    .contenedor_papa_noel img {
+        width: 40vw;
+    }
+
+    .asistente {
+        width: 10vw; 
+    }
+
+    .ventana_asistente h2, .ventana_receta h2 {
+        font-size: 2.6rem;
+    }
+    
+    .contenedor_chat {
+        width: 66vw;
+    }
+
+    .mensaje.chat {
+        font-size: 0.8rem;
+    }
+    
+    .mensaje.usuario {
+        font-size: 0.8rem;
+    }
+    
+    .txt_opcion {
+        font-size: 1rem;
+    }
+    
+    .opciones {
+        font-size: 0.8rem;
+    }
+
+    #f_atras_recetas, #f_atras_asistente {
+        width: 4vw;
+    }
+
+    .recetas_de_navidad h2 {
+        text-align: center;
+    }
+
+    .recetas_de_navidad {
+        height: fit-content;
+    }
+    .contenedor_recetas {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    
+    .img_recetas {
+        width: 30vw;
+    }
+    
+    .contenedor_recetas div h3 {
+        font-size: 1rem;
+    }
+    
+    .imagenes_receta img:first-child {
+        width: 26vw;
+    }
+    
+    .imagenes_receta img:last-child {
+        width: 22vw;
+    }
+    
+    .ventana_receta div {
+        gap: 10px;
+        margin-top: 3vh;
+    }
+    
+    .ventana_receta div h3 {
+        font-size: 1rem;
+    }
+    
+    .ventana_receta div > div:first-child p {
+        font-size: 0.8rem;
+    }
+    
+    .ventana_receta div > div:last-child p {
+        font-size: 0.8rem;
+    }
+    
+
+}
